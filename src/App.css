@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+/* 
+  Google Fonts:
+    font-family: 'Oxygen', sans-serif;
+*/
+
+/* Global Styling */
+body {
+	font-family: 'Oxygen', sans-serif;
+}
+.nav-bar {
+	background-color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headings {
+	text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Custom Hero CSS */
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-picture {
+	width: 240px;
+	height: 200px;
+	border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.intro {
+	text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+	margin-top: 20px;
+}
+
+/* Portfolio Card CSS */
+
+.portfolio-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 5px;
+	height: 100%;
 }
