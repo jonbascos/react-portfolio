@@ -8,9 +8,7 @@ function Header() {
 	return (
 		<div>
 			<Navbar bg='dark' variant='dark' expand='sm'>
-				<Navbar.Brand href='#home'>
-					Jon Bascos - Web Developer
-				</Navbar.Brand>
+				<Navbar.Brand href='#home'>Jon Bascos</Navbar.Brand>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='mr-auto'>

@@ -4,8 +4,14 @@
 */
 
 /* Global Styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Oxygen', sans-serif;
+	background-color: #f3f3f3;
 }
 .nav-bar {
 	background-color: blue;
@@ -37,17 +43,31 @@ body {
 
 button {
 	margin-top: 20px;
+	margin-left: 10px;
 }
 
 /* Portfolio Card CSS */
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+}
 
 .portfolio-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	border: 1px solid black;
-	margin: 10px;
-	padding: 5px;
+	margin: 20px;
+	padding: 10px;
 	height: 100%;
+}
+
+.portfolio-images {
+	width: 50vw;
+	height: 200px;
 }

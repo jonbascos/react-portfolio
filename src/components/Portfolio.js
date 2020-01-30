@@ -7,7 +7,9 @@ function Portfolio(props) {
 		<div>
 			<h1 className='headings'>Portfolio</h1>
 			<br />
-			<Card />
+			<ul className='card-container'>
+				<Card />
+			</ul>
 		</div>
 	);
 }
