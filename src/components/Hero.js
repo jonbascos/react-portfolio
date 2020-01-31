@@ -6,13 +6,12 @@ import headshot from '../static/img/headshot.jpg';
 
 function Hero() {
 	function sendEmail() {
-		// window.location.assign('mailto:jon@jonbascos.com');
 		var email = 'jon@jonbascos.com';
-		window.open = 'mailto:' + email;
+		window.location = 'mailto:' + email;
 	}
 	return (
 		<div>
-			<Jumbotron fluid>
+			<Jumbotron>
 				<div className='hero-container'>
 					<img
 						className='profile-picture'
@@ -22,10 +21,16 @@ function Hero() {
 					<div className='intro'>
 						<h1>Hello!</h1>
 						My Name is Jon and I'm a full stack web developer!
+						<div className='contactButton'>
+							<Button
+								className='contact-button'
+								variant='dark'
+								onClick={sendEmail}
+							>
+								Contact Me
+							</Button>
+						</div>
 					</div>
-					<Button variant='dark' onClick={sendEmail}>
-						Contact Me
-					</Button>
 				</div>
 			</Jumbotron>
 		</div>

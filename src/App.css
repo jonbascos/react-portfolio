@@ -12,6 +12,8 @@
 body {
 	font-family: 'Oxygen', sans-serif;
 	background-color: #f3f3f3;
+	font-size: 1.5em;
+	line-height: 0.8em;
 }
 .nav-bar {
 	background-color: blue;
@@ -19,6 +21,11 @@ body {
 
 .headings {
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.links {
+	color: black;
 }
 
 /* Custom Hero CSS */
@@ -39,9 +46,11 @@ body {
 
 .intro {
 	text-align: center;
+	line-height: 1.2em;
+	padding: 20px;
 }
 
-button {
+.contact-button {
 	margin-top: 20px;
 	margin-left: 10px;
 }
@@ -50,24 +59,50 @@ button {
 
 .card-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	/* height: 100vh; */
+}
+
+.individual-cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 0.8em;
+	line-height: 1.5em;
 }
 
 .portfolio-card {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	border: 1px solid black;
-	margin: 20px;
-	padding: 10px;
+	margin: 10px;
 	height: 100%;
 }
 
 .portfolio-images {
-	width: 50vw;
+	width: 18rem;
 	height: 200px;
+	padding: 5px;
+}
+
+/* Media Queries */
+
+@media (min-width: 640px) {
+	.hero-container {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
 }

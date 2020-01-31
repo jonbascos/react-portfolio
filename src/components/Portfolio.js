@@ -1,14 +1,16 @@
 import React from 'react';
 
-import Card from './Card';
+import ProjectCard from './ProjectCard';
 
 function Portfolio(props) {
 	return (
 		<div>
-			<h1 className='headings'>Portfolio</h1>
+			<h1 className='headings'>
+				<a name='portfolio'>Portfolio</a>
+			</h1>
 			<br />
 			<ul className='card-container'>
-				<Card />
+				<ProjectCard />
 			</ul>
 		</div>
 	);
