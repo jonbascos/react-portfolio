@@ -17,12 +17,18 @@ body {
 }
 
 .headings {
+	margin-top: 5px;
 	text-align: center;
 	text-transform: uppercase;
+	text-decoration: underline;
 }
 
 .links {
 	color: black;
+}
+
+li {
+	list-style: none;
 }
 
 /* Custom Hero CSS */
@@ -55,7 +61,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 50px;
-	list-style: none;
 }
 
 /* Portfolio Card CSS */
@@ -111,6 +116,32 @@ body {
 	max-width: 90%;
 }
 
+/* Skills section CSS */
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.skills-card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	margin-top: 10px;
+	padding: 10px;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.skills-card ul li {
+	margin-top: 5px;
+}
+
 /* Media Queries */
 
 @media (min-width: 640px) {
@@ -122,6 +153,12 @@ body {
 	.profile-picture {
 		height: 250px;
 		width: 250px;
+	}
+
+	.skills-container {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px;
 	}
 }
 

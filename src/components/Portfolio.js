@@ -6,12 +6,12 @@ function Portfolio(props) {
 	return (
 		<div>
 			<h1 className='headings'>
-				<a name='portfolio'>Portfolio</a>
+				Portfolio
 			</h1>
 			<br />
 			<ul className='card-container'>
 				<ProjectCard />
-			</ul>
+			</ul> 
 		</div>
 	);
 }
